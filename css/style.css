@@ -70,6 +70,7 @@ header .navbar {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
+
   height: 400px;
   text-align: center;
 }
@@ -79,14 +80,19 @@ header .navbar {
   transform: translate(-30px, -35px);
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .main_right {
-  background: url(../img/landing_bg.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 400px;
-  text-align: center;
+    background: url(../img/landing_bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 20px 0;
+    height: 400px;
+    text-align: center;
+  }
+  .main_right img {
+  width: 40%;
+  height: 350px;
+  transform: translate(-10px, -35px);
 }
 }
 
@@ -101,12 +107,12 @@ header .navbar {
 
 .waves {
   position: absolute;
-  bottom: -160px;
-  left: -700px;
-
-
+  /* bottom: -160px;
+  left: -700px; */
+  bottom: -20vh;
+  left: -40vw;
 }
 .waves img {
-  transform: scale(0.7, .7);
+  transform: scale(0.7, 0.7);
 }
 /* ===============End header=============== */
