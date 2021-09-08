@@ -21,11 +21,13 @@ header {
   background-position: center 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 600px;
 }
 header .navbar {
   border: 0;
   box-shadow: none;
+  position: fixed;
+  width: 90%;
 }
 .navbar .nav-link::after {
   content: "";
@@ -61,58 +63,118 @@ header .navbar {
   }
 }
 
+main {
+  margin-top: 100px !important;
+}
 .main_left strong {
   color: rgb(96, 14, 173);
 }
 
 .main_right {
+  position: relative;
   background: url(../img/landing_bg.png);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
   height: 400px;
   text-align: center;
 }
-.main_right img {
-  width: 40%;
-  height: 350px;
-  transform: translate(-30px, -35px);
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .main_right {
-    background: url(../img/landing_bg.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: 20px 0;
-    height: 400px;
-    text-align: center;
+    background-position: 23px center;
   }
-  .main_right img {
+  .main_right img.maskgroup {
+    left: 50% !important;
+  }
+}
+.main_right img.maskgroup {
+  position: absolute;
+  top: 35%;
+  left: 45%;
   width: 40%;
   height: 350px;
-  transform: translate(-10px, -35px);
-}
+  transform: translate(-50%, -50%);
 }
 
 .clouds {
-  position: relative;
-  top: -90px;
-  left: -5px;
-}
-.clouds img {
-  transform: rotate(9deg) scale(2, 0.5) skew(-10deg);
+  position: absolute;
+  bottom: -10%;
+  left: 20%;
+  max-width: 350px;
 }
 
 .waves {
   position: absolute;
-  /* bottom: -160px;
-  left: -700px; */
-  bottom: -20vh;
-  left: -40vw;
+  bottom: -20%;
+  left: -37%;
+}
+@media screen and (max-width: 767px) {
+  .waves {
+    bottom: -14%;
+    left: -37%;
+  }
+  .waves img {
+    transform: scale(1);
+  }
 }
 .waves img {
   transform: scale(0.7, 0.7);
 }
 /* ===============End header=============== */
+
+/* ================= why choose =============== */
+.whychoose {
+  position: relative;
+  background-size: cover;
+  background: url(../img/second_section_.png);
+  background-repeat: no-repeat;
+  background-position: 80% 20%;
+  background-size: 77% 70%;
+  color: #777;
+}
+@media screen and (max-width: 767px) {
+  .whychoose {
+    background: unset;
+    /* overflow: hidden; */
+  }
+  /* .whychoose::before {
+    content: "";
+    position: absolute;
+    background: url(../img/second_section_.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    top: -25%;
+    right: -60%;
+    height: 100%;
+    width: 200%;
+    transform: rotate(40deg) scale(0.5, 1);
+  } */
+}
+
+.why_kudozoka_img {
+  position: relative;
+}
+.why_kudozoka_img img {
+  width: 300px;
+  height: 300px;
+}
+.why_kudozoka_title {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width: 767px) {
+  .why_kudozoka_title {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(0, -50%);
+  }
+}
+.discount_desc {
+  color: #777;
+}
+/* =================End why choose =============== */
