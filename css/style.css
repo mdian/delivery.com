@@ -12,6 +12,9 @@
 * {
   text-transform: capitalize;
 }
+body {
+  height: 4000px;
+}
 /* ============End global================ */
 
 /* ===============header=============== */
@@ -27,7 +30,16 @@ header .navbar {
   border: 0;
   box-shadow: none;
   position: fixed;
-  width: 90%;
+  z-index: 999;
+  right: 0;
+  left: 0;
+  background: #eaf1f585;
+}
+
+@media screen and (max-width: 767px) {
+  header .navbar {
+    background-color: #e5f4fbab;
+  }
 }
 .navbar .nav-link::after {
   content: "";
@@ -63,14 +75,14 @@ header .navbar {
   }
 }
 
-main {
+.banner {
   margin-top: 100px !important;
 }
-.main_left strong {
+.banner_left strong {
   color: rgb(96, 14, 173);
 }
 
-.main_right {
+.banner_right {
   position: relative;
   background: url(../img/landing_bg.png);
   background-size: cover;
@@ -80,14 +92,14 @@ main {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .main_right {
+  .banner_right {
     background-position: 23px center;
   }
-  .main_right img.maskgroup {
+  .banner_right img.maskgroup {
     left: 50% !important;
   }
 }
-.main_right img.maskgroup {
+.banner_right img.maskgroup {
   position: absolute;
   top: 35%;
   left: 45%;
@@ -122,22 +134,22 @@ main {
 }
 /* ===============End header=============== */
 
-/* ================= why choose =============== */
-.whychoose {
+/* ================= features =============== */
+.features {
   position: relative;
-  background-size: cover;
+  background-size: contain;
   background: url(../img/second_section_.png);
   background-repeat: no-repeat;
-  background-position: 80% 20%;
-  background-size: 77% 70%;
+  background-position: 72% 382%;
+  background-size: 75% 97%;
   color: #777;
 }
 @media screen and (max-width: 767px) {
-  .whychoose {
+  .features {
     background: unset;
     /* overflow: hidden; */
   }
-  /* .whychoose::before {
+  /* .features::before {
     content: "";
     position: absolute;
     background: url(../img/second_section_.png);
@@ -152,6 +164,9 @@ main {
     transform: rotate(40deg) scale(0.5, 1);
   } */
 }
+/* =================End features =============== */
+
+/* ================why-choose ===================*/
 
 .why_kudozoka_img {
   position: relative;
@@ -177,4 +192,67 @@ main {
 .discount_desc {
   color: #777;
 }
-/* =================End why choose =============== */
+/* ================ end why-choose ===================*/
+
+/* support */
+/* .owl-carousel{
+  display: flex !important;
+  justify-content: center !important;
+} */
+
+/* 
+.owl-carousel .item:nth-child(odd) img{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+} */
+.owl-carousel .owl-item.active .item {
+  margin-top: 150px;
+}
+
+.desc_box {
+  display: none;
+}
+.owl-carousel .owl-item.active .item img {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.owl-carousel .owl-item.active.center .item {
+  margin-top: 10px;
+}
+.owl-carousel .owl-item.active.center .item .desc_box {
+  display: block;
+}
+.owl-carousel .owl-item.active.center img {
+  width: 350px !important;
+  height: 350px !important;
+  margin: 0 auto;
+}
+.owl-carousel .owl-item.active img {
+  width: 200px !important;
+  height: 200px !important;
+}
+
+.owl-nav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: -11rem ;
+  position:relative;
+  z-index: 999;
+}
+@media screen and (max-width:991px){
+    .owl-nav {
+ 
+  margin-top: -27rem ;
+
+}
+}
+.owl-nav button{
+  margin: 0 14rem;
+}
+.owl-nav button span{
+font-size: 3rem;
+}
