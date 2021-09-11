@@ -2,13 +2,12 @@ new WOW().init();
 
 $(".owl-carousel").owlCarousel({
   loop: true,
-  margin: 10,
+  margin: 15,
   nav: true,
   center: true,
   dots: false,
   autoplay: true,
   autoplayHoverPause: true,
-
   responsive: {
     0: {
       items: 1,
