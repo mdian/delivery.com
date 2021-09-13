@@ -180,7 +180,7 @@ header .navbar {
 footer {
   height: 400px;
   position: relative;
-  background: url(/img/footer.png);
+  background: url(../img/footer.png);
   background-repeat: no-repeat;
   background-size: 120% 600px;
   background-position: top;
