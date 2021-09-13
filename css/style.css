@@ -354,4 +354,7 @@ footer {
     margin-top: 24rem;
 
 }
+a.text-light{
+  color: #222 !important;
+}
 }
