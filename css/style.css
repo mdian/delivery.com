@@ -7,6 +7,9 @@
 * {
   text-transform: capitalize;
 }
+body {
+  overflow-x: hidden;
+}
 
 /* ============End global================ */
 
@@ -210,6 +213,16 @@ footer {
 /*======================== end footer =========================== */
 
 /* ********************* Media Query *************************** */
+
+@media screen and (max-width: 500px) {
+  .clouds {
+    position: absolute;
+    bottom: 13%;
+    left: 23%;
+    max-width: 50%;
+  }
+}
+
 @media screen and (max-width: 767px) {
   header .navbar {
     background-color: #e5f4fbab;
@@ -272,7 +285,7 @@ footer {
 }
 @media screen and (max-width: 500px) {
   .owl-nav button {
-    margin: 9rem 10rem 0 10rem;
+    margin: 150% 6% 0 6%;
   }
 }
 
