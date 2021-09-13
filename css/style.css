@@ -317,6 +317,27 @@ footer {
     height: 66vh !important;
   }
 }
+@media screen and (max-width: 414px) {
+  footer {
+    margin-top: -2rem;
+    background: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: center 10vh;
+    height: 87vh;
+  }
+}
+@media screen and (max-width: 666px) {
+  footer {
+    margin-top: 9rem;
+    background: url(../img/footer.png);
+    background-repeat: no-repeat;
+    background-size: 200%;
+    background-position: center 10vh;
+    height: 87vh;
+  }
+}
+
 .footer_img {
   height: 40vh;
   position: relative;
@@ -325,4 +346,12 @@ footer {
   .footer_img {
     height: 60vh;
   }
+  .left_footer {
+    background-color: azure;
+   
+  }
+  footer {
+    margin-top: 24rem;
+
+}
 }
