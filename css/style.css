@@ -7,9 +7,6 @@
 * {
   text-transform: capitalize;
 }
-body {
-  overflow-x: hidden;
-}
 
 /* ============End global================ */
 
@@ -213,16 +210,6 @@ footer {
 /*======================== end footer =========================== */
 
 /* ********************* Media Query *************************** */
-
-@media screen and (max-width: 500px) {
-  .clouds {
-    position: absolute;
-    bottom: 13%;
-    left: 23%;
-    max-width: 50%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   header .navbar {
     background-color: #e5f4fbab;
@@ -258,6 +245,12 @@ footer {
   .waves img {
     transform: scale(1);
   }
+ .clouds {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    max-width: 250px;
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -280,13 +273,9 @@ footer {
     margin-top: -27rem;
   }
   .owl-nav button {
-    margin: 0 14rem;
-  }
+    margin: 0 10rem;
+    padding: 0;
 }
-@media screen and (max-width: 500px) {
-  .owl-nav button {
-    margin: 150% 6% 0 6%;
-  }
 }
 
 @media screen and (max-width: 700px) {
@@ -317,27 +306,6 @@ footer {
     height: 66vh !important;
   }
 }
-@media screen and (max-width: 414px) {
-  footer {
-    margin-top: -2rem;
-    background: url(../img/footer.png);
-    background-repeat: no-repeat;
-    background-size: 300%;
-    background-position: center 10vh;
-    height: 87vh;
-  }
-}
-@media screen and (max-width: 666px) {
-  footer {
-    margin-top: 9rem;
-    background: url(../img/footer.png);
-    background-repeat: no-repeat;
-    background-size: 200%;
-    background-position: center 10vh;
-    height: 87vh;
-  }
-}
-
 .footer_img {
   height: 40vh;
   position: relative;
@@ -346,15 +314,4 @@ footer {
   .footer_img {
     height: 60vh;
   }
-  .left_footer {
-    background-color: azure;
-   
-  }
-  footer {
-    margin-top: 24rem;
-
-}
-a.text-light{
-  color: #222 !important;
-}
 }
